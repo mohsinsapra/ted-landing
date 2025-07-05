@@ -1,0 +1,149 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.gradient-green {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+}
+.flexibility-section {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+.gradient-blue {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+.gradient-pink {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+.gradient-orange {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+.gradient-red {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+}
+.gradient-purple {
+  background: linear-gradient(90deg, #a8c0ff, #3f2b96);
+}
+.product-card {
+  background: transparent;
+  border-radius: 1.5rem;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    /* soft depth */ 0 6px 20px rgba(63, 43, 150, 0.3); /* color-tinted glow */
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  color: #fff; /* good contrast */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.outro {
+  position: relative;
+
+  overflow: hidden;
+}
+.main {
+  overflow: hidden;
+}
+
+.word-with-star {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.letter-o {
+  position: relative;
+  display: inline-block;
+}
+
+.star {
+  position: absolute;
+  top: -0.6em; /* adjust vertically */
+  right: -0.8em; /* adjust horizontally */
+  font-size: 0.8em; /* make the star a bit smaller */
+  pointer-events: none;
+}
+
+.intro {
+  display: inline-block; /* <— IMPORTANT */
+  transition: transform 0.3s ease;
+}
+
+.outro-text {
+  font-size: 20vw;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  margin: 0;
+}
+.intro-text {
+  font-size: 10vw;
+  font-weight: bold;
+  white-space: nowrap;
+
+  left: -100%;
+  opacity: 0;
+  /* transform: translateY(-50%); */
+  margin: 0;
+}
+/* 
+.intro-section {
+  align-items: end;
+} */
+
+.crafting-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+  /* gap: 20px; */
+}
+
+.crafting {
+  background-color: orange;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.crafting-card {
+  background-color: blueviolet;
+  margin: 20px;
+  height: 300px;
+  opacity: 0;
+  overflow: hidden;
+  flex: 2;
+}
+.crafting-card-1 {
+  background-color: pink;
+  padding: 50px;
+  height: 400px;
+  flex: 1;
+  margin: 20px;
+  opacity: 0;
+  overflow: hidden;
+  flex: 1;
+}
+.crafting-card-title {
+  font-size: 3vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* .boxes {
+  align-items: baseline;
+} */

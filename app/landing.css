@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom styles for the background color and font */
+
+.body-element {
+  background-color: #1a3a5c; /* Dark blue background */
+  font-family: 'Inter', sans-serif;
+  color: #ffffff; /* White text color */
+  overflow-x: hidden; /* Prcrafting-bottom-rightvent horizontal scrolling */
+}
+/* Custom styling for the video thumbnail */
+.video-thumbnail {
+  background-image: url('https://placehold.co/160x90/4A5568/FFFFFF?text=Video'); /* Placeholder for video thumbnail */
+  background-size: cover;
+  background-position: center;
+}
+/* Hide scrollbar for aesthetic purposes, but allow scrolling */
+.body-element::-webkit-scrollbar {
+  display: none;
+}
+.body-element {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Ensure the background video fills its container */
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  filter: brightness(0.6); /* Slightly darken the video for better text readability */
+}
